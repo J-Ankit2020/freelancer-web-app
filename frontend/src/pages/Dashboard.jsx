@@ -3,9 +3,9 @@ import logo from '../assets/logo.jpeg'
 import DashboardLeft from './DashboardLeft'
 const Dashboard = ( ) => {
     return (
-        <div className='w-full flex flex-row'>
+        <div className='w-full h-screen flex flex-row'>
      <DashboardLeft/>
-            <div className='rightt bg-[#B2BCFE] w-4/5 flex flex-col'>
+            <div className='rightt  h-full bg-[#B2BCFE] w-4/5 flex flex-col'>
                 <div className='1st flex justify-between  h-[10%] mx-4 my-4'>
                     <div className="logo ">
                         <img src={logo} className='h-[70%] rounded-md w-10' alt="logo"  />
