@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Card from './Card';
 import SideBar from '../components/Sidebar';
 const JobsListing = () => {
@@ -45,6 +46,17 @@ const JobsListing = () => {
               </button>
             </div>
           </form>
+=======
+import Card from "./Card";
+import DashboardLeft from "../components/Sidebar";
+import { GoSearch } from "react-icons/go";
+const JobsListing = () => {
+  return (
+    <div className="w-full flex flex-row  ">
+      <DashboardLeft />
+          <div className=" bg-[#B2BCFE] w-4/5 h-full">
+          <div class="search max-w-2xl mx-auto mt-4">
+>>>>>>> 5b7fbb75385e1b24143cb58c0bb16c0d7ac14ea3
 
           <script src='https://unpkg.com/flowbite@1.4.0/dist/flowbite.js'></script>
         </div>
