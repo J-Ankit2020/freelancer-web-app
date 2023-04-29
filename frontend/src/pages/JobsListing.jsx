@@ -1,9 +1,9 @@
 import Card from "./Card";
-import DashboardLeft from "./DashboardLeft";
+import DashboardLeft from "../components/Sidebar";
 import { GoSearch } from "react-icons/go";
 const JobsListing = () => {
   return (
-    <div className="w-full flex flex-row ">
+    <div className="w-full flex flex-row  ">
       <DashboardLeft />
           <div className=" bg-[#B2BCFE] w-4/5 h-full">
           <div class="search max-w-2xl mx-auto mt-4">
