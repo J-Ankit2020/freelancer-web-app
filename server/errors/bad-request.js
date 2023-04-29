@@ -1,4 +1,4 @@
-import customApiError from "./custom-api.mjs";
+import customApiError from "./custom-api.js";
 import { StatusCodes } from "http-status-codes";
 class BadRequestError extends customApiError {
   constructor(message) {
