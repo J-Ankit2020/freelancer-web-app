@@ -67,4 +67,5 @@ const updateUser = async (req, res) => {
 
   res.status(201).json({ user, token, location: user.location });
 };
+
 export { login, register, updateUser };
