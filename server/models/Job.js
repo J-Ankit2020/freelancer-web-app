@@ -14,7 +14,7 @@ const JobSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ['interview', 'declined', 'pending'],
+      enum: ['completed', 'pending'],
       default: 'pending',
     },
     jobType: {
@@ -36,10 +36,8 @@ const JobSchema = new mongoose.Schema(
       type: [
         {
           type: String,
-          unique: true,
         },
       ],
-      required: [true, 'Please provide skills required for this job'],
     },
     createdBy: {
       type: mongoose.Types.ObjectId,
