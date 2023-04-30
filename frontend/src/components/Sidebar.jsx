@@ -5,8 +5,8 @@ import { AiTwotoneAlert } from 'react-icons/ai';
 import { BsChatDots, BsCardChecklist } from 'react-icons/bs';
 const SideBar = () => {
   return (
-    <div className='leftt text-white h-screen  bg-[#00083B] w-1/5'>
-      <div className='absolute mt-[3px] top-[15%] left-[2%] font-semibold text-xl'>
+    <div className='leftt text-white  bg-[#00083B] h-full '>
+      <div className='h-screen top-[15%] left-[2%] font-semibold text-xl'>
         <div className='flex flex-row items-center justify-center'>
           <MdOutlineSpaceDashboard />
           <p className='ml-2'>Dashboard</p>

@@ -11,12 +11,12 @@ import reviewRouter from './routes/reviews.js';
 import authenticateUser from './middleware/auth.js';
 import notFoundMiddleWare from './middleware/not-found.js';
 import errorHandlerMiddleware from './middleware/error-handler.js';
-
+import cors from 'cors'
 const app = express();
 
 app.use(express.json());
 app.use(morgan('tiny'));
-
+app.use(cors())
 // connect to MongoDB
 connectMongoose();
 

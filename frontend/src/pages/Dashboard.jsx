@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import logo from '../assets/logo.jpeg';
 import SideBar from '../components/Sidebar';
+import { useAppContext } from '../context/appContext';
 const Dashboard = () => {
+  const {  logoutUser } = useAppContext();
   return (
     <div className='w-full flex flex-row'>
       <SideBar />
@@ -16,6 +19,11 @@ const Dashboard = () => {
             <button className=' bottom-5 left-[2%] w-fit bg-white text-black px-3 rounded-md py-1'>
               Profile
             </button>
+            <button
+            className=' bottom-5 ml-2 w-fit bg-white text-black px-3 rounded-md py-1'
+            type="button"
+            onClick={logoutUser}
+          >logout </button>
           </div>
         </div>
 
